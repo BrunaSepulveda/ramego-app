@@ -1,0 +1,154 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafaed;
+}
+
+#background-first {
+  width: 100vw;
+  height: 768px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./public/pattern-vermelha.svg');
+  background-repeat: repeat;
+  position: relative;
+}
+
+#delivery {
+  position: absolute;
+}
+
+#ilustration-text {
+  position: relative;
+  padding-right: 738px;
+}
+
+.buttonStyleBase {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 213px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: 600;
+}
+
+#ilustration-text button {
+  background-color: #1820ef;
+  color: #ffffff;
+}
+
+#ilustration-text p {
+  width: 201px;
+  color: #ffffff;
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.select-container-title {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 47.52px;
+  text-align: center;
+  color: #000000;
+}
+
+.select-container-description {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 47px;
+}
+
+.select-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 448px;
+  justify-content: flex-end;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+}
+
+.options button {
+  all: unset;
+  width: 320px;
+  height: 316px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px 0px #e0dbbf99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.option-name {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+  color: #1820ef;
+}
+
+.option-description {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.option-price {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+  color: #ff4e42;
+}
+
+#button-order {
+  background-color: #C5C5C5;
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 126px;
+  margin-left: auto;
+  margin-right: auto;
+}
