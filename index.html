@@ -14,6 +14,12 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      function createOrder() {
+        window.location.href = '/orderPage.html';
+      }
+    </script>
+    
     <div id="background-first">
       <img id="delivery" src="public/Ilustracao.svg" />
       <div id="ilustration-text">
@@ -24,7 +30,7 @@
           and choose your favorite flavour combination!
         </p>
         <a href="#container-broths">
-          <button class="buttonStyleBase">
+          <button class="button-style-base">
             ORDER NOW
             <img src="public/Fill 1.svg" />
           </button>
@@ -35,7 +41,7 @@
     <div class="select-container" id="container-proteins"></div>
     <div id="broths" class="options"></div>
     <div id="proteins" class="options"></div>
-    <button class="buttonStyleBase" id="button-order">
+    <button class="button-style-base button-place-order" onclick="createOrder()">
       PLACE MY ORDER
       <img src="public/Fill 1.svg" />
     </button>

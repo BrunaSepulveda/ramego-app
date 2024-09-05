@@ -35,7 +35,7 @@ body a {
   padding-right: 738px;
 }
 
-.buttonStyleBase {
+.button-style-base {
   all: unset;
   display: inline-block;
   cursor: pointer;
@@ -144,11 +144,66 @@ body a {
   color: #ff4e42;
 }
 
-#button-order {
+.button-place-order {
   background-color: #c5c5c5;
   color: #ffffff;
   margin-top: 80px;
   margin-bottom: 126px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#container-left {
+  width: 50%;
+  height: 100vh;
+  background-image: url('../public/pattern-azul.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-right {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.span-order-title {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.span-order-description {
+  font-family: 'M PLUS Rounded 1c';
+  color: #ffc024;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 47.52px;
+  text-align: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ .span-text-black {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
 }
