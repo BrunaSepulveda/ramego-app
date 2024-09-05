@@ -4,25 +4,28 @@ import { useAppStateStorage } from './store';
 import './style.css';
 
 window.addEventListener('DOMContentLoaded', () => {
-  const { changeBroths, changeProteins, broths, proteins } =
-    useAppStateStorage();
+  const store = useAppStateStorage();
 
   requestSaveProteinsAndBroths()
     .then((value) => {
-      changeBroths(value?.broths || []);
-      changeProteins(value?.proteins || []);
+      store.changeBroths(value?.broths || []);
+      store.changeProteins(value?.proteins || []);
     })
     .then(() => {
-      if (broths.length !== 0 && proteins.length !== 0) {
+      const updatedStore = useAppStateStorage();
+      const updatedBroths = updatedStore.broths;
+      const updatedProteins = updatedStore.proteins;
+
+      if (updatedBroths.length !== 0 && updatedProteins.length !== 0) {
         createSelectButtons({
-          list: broths,
+          list: updatedBroths,
           id: 'broths',
           title: 'First things first: select your favorite broth.',
           description: 'It will give the whole flavor on your ramen soup.'
         });
 
         createSelectButtons({
-          list: proteins,
+          list: updatedProteins,
           id: 'proteins',
           title: 'It’s time to choose (or not) your meat!',
           description: 'Some people love, some don’t. We have options for all tastes.'

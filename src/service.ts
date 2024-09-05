@@ -1,5 +1,5 @@
 import axios, { AxiosError } from 'axios';
-import { BrothProtein } from './types';
+import { BrothProtein, Order } from './types';
 
 const api = axios.create({
   baseURL: 'http://localhost:8080',
@@ -16,8 +16,8 @@ async function getBroths(): Promise<BrothProtein[]> {
   return (await api.get('/broths')).data;
 }
 
-export async function createOrder(brothId: string, proteinId: string) {
-  return api.post('/orders', { brothId, proteinId });
+export async function createOrder(brothId: string, proteinId: string): Promise<Order> {
+  return (await api.post('/orders', { brothId, proteinId })).data;
 }
 
 export async function requestSaveProteinsAndBroths(): Promise<

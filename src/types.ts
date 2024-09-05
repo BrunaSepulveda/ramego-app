@@ -6,3 +6,9 @@ export type BrothProtein = {
   description: string;
   price: number;
 };
+
+export type Order = {
+  id: string;
+  image: string;
+  description: string;
+};
